@@ -15,12 +15,16 @@
         "dark": "./assets/icons/dark.png",
         "light": "./assets/icons/light.png",
         "tinted": "./assets/icons/tinted.png"
-      }
+      },
+      "runtimeVersion": "1.0.0"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/icons/adaptive-icon.png",
         "backgroundColor": "#ffffff"
+      },
+      "runtimeVersion": {
+        "policy": "appVersion"
       }
     },
     "web": {
@@ -47,6 +51,17 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "bbb68191-2d82-48ca-b071-26980febdf72"
+      }
+    },
+    "updates": {
+      "url": "https://u.expo.dev/bbb68191-2d82-48ca-b071-26980febdf72"
     }
   }
 }
