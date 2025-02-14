@@ -11,19 +11,17 @@ export default function TabLayout() {
         headerShown: false,
         tabBarShowLabel: false,
         tabBarStyle: {
+          position:"absolute",
           width: "80%",
-          margin: "auto",
+          // margin: "auto",
           backgroundColor: "tan",
-          opacity: 0.5,
           height: 60,
           borderRadius: 30,
           bottom: 40,
           display: "flex",
           flexDirection: "row",
           justifyContent: "space-between",
-          alignItems: "center",
-          shadowColor: "transparent",
-        },
+          alignItems: "center",        },
       }}
     >
       <Tabs.Screen
