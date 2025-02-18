@@ -2,24 +2,22 @@ import { Pressable, SafeAreaView, View } from "react-native";
 import React from "react";
 import { CustomText } from "@/components/texts";
 import { useRouter } from "expo-router";
+import Ionicons from "@expo/vector-icons/Ionicons";
 
 const InitialScreen = () => {
   const router = useRouter();
   return (
-    <SafeAreaView className="bg-rose-200 h-screen justify-center items-center p-4">
-      <View className=" w-full p-4 backdrop-blur-md bg-rose-300">
-        <CustomText className="text-rose-900">Hello, world!</CustomText>
-      </View>
-      <View className="w-80 h-40 rounded-2xl overflow-hidden p-5  bg-white/20">
-        <CustomText className="text-gray-900/10 text-lg font-semibold">
-          Blurry Background
+    <SafeAreaView className="h-screen justify-center">
+      <View className="p-4 items-center">
+        <CustomText className="text-gray-700 text-5xl w-9/12 text-ellipsis text-center">
+          Goodmorning  Priscilla!
+          <Ionicons name="sunny-sharp" size={34} color="gold" />
         </CustomText>
-      </View>
-      <CustomText className="">InitialScreen</CustomText>
 
-      <Pressable onPress={() => router.push("/screens")}>
-        <CustomText className="text-rose-900">Go to home screen</CustomText>
-      </Pressable>
+        <Pressable onPress={() => router.push("/screens")}>
+          <CustomText className="text-rose-900 pt-4">Start the day</CustomText>
+        </Pressable>
+      </View>
     </SafeAreaView>
   );
 };
