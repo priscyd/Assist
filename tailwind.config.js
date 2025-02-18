@@ -4,7 +4,8 @@ module.exports = {
   content: [
     "./app/**/*.{js,jsx,ts,tsx}",
     "./app/(tabs)/**/*.{js,jsx,ts,tsx}",
-    "./app/*.tsx"
+    "./app/*.tsx",
+    "./components/*.tsx"
   ],
   presets: [require("nativewind/preset")],
   theme: {
