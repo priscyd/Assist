@@ -3,15 +3,15 @@ import React from "react";
 import { CustomText } from "./texts";
 import Ionicons from "@expo/vector-icons/Ionicons";
 
-const Cards = () => {
+export const TodoCard = () => {
   return (
-    <View className="w-80 h-40 rounded-2xl overflow-hidden p-5  bg-gray-900/20">
-      <Ionicons name="checkmark-circle" size={16} color="red" />
-      <CustomText className="text-gray-900/10 text-lg font-semibold">
-        Blurry Background
-      </CustomText>
+    <View className="w-full h-fit rounded-2xl p-5 bg-gray-900/20">
+      <View className="flex-row items-center justify-center">
+        <Ionicons name="checkmark-circle" size={16} color="black" />
+        <CustomText className="text-gray-900 text-lg font-semibold ml-2">
+          Blurry Background
+        </CustomText>
+      </View>
     </View>
   );
 };
-
-export default Cards;
