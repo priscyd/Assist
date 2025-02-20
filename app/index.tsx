@@ -9,19 +9,19 @@ const InitialScreen = () => {
   const router = useRouter();
   return (
     <SafeAreaView className="h-screen justify-center">
-      <View className="p-4 items-center">
-        <CustomText className="text-gray-700 text-5xl w-9/12 text-ellipsis text-center">
+      <View className="p-4 items-center gap-6">
+        <CustomText className="text-gray-700 text-2xl w-9/12 text-ellipsis text-center gap-2">
           Goodmorning Priscilla!
-          <Ionicons name="sunny-sharp" size={34} color="gold" />
+          <Ionicons name="sunny-sharp" size={20} color="gold" />
         </CustomText>
 
         <View className="w-full">
           <TodoCard />
         </View>
 
-        <Pressable onPress={() => router.push("/screens")}>
+        {/* <Pressable onPress={() => router.push("/screens")}>
           <CustomText className="text-rose-900 pt-4">Start the day</CustomText>
-        </Pressable>
+        </Pressable> */}
       </View>
     </SafeAreaView>
   );
